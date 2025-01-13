@@ -1,26 +1,32 @@
-import { TOGGLE_LIKED } from "./actions";
-import productsData from "../data";
+import { TOGGLE_LIKED, SET_PRODUCTS, SET_LIKED_PRODUCTS } from "./actions";
 
 const initialState = {
-	products: productsData,
-	likedProducts: [],
+  products: {},
+  likedProducts: [],
 };
 
 const rootReducer = (state = initialState, action) => {
-	switch (action.type) {
-		case TOGGLE_LIKED:
-			const productId = action.payload;
-			const isLiked = state.likedProducts.includes(productId);
-			const likedProducts = isLiked
-				? state.likedProducts.filter((id) => id !== productId) // remember - filter creates a new array
-				: [...state.likedProducts, productId];
-			return {
-				...state,
-				likedProducts,
-			};
-		default:
-			return state;
-	}
+  switch (action.type) {
+    case TOGGLE_LIKED:
+      return {
+        ...state,
+        likedProducts: state.likedProducts.includes(action.payload)
+          ? state.likedProducts.filter((id) => id !== action.payload)
+          : [...state.likedProducts, action.payload],
+      };
+    case SET_PRODUCTS:
+      return {
+        ...state,
+        products: action.payload,
+      };
+    case SET_LIKED_PRODUCTS:
+      return {
+        ...state,
+        likedProducts: action.payload,
+      };
+    default:
+      return state;
+  }
 };
 
 export default rootReducer;

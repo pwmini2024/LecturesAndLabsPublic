@@ -1,0 +1,79 @@
+{
+  "products": {
+    "en-US": [
+      {
+        "id": 1,
+        "title": "Book"
+      },
+      {
+        "id": 2,
+        "title": "Pen"
+      },
+      {
+        "id": 3,
+        "title": "Laptop"
+      },
+      {
+        "id": 4,
+        "title": "Headphones"
+      },
+      {
+        "id": 5,
+        "title": "Mouse"
+      }
+    ],
+    "de-DE": [
+      {
+        "id": 1,
+        "title": "Buch"
+      },
+      {
+        "id": 2,
+        "title": "Stift"
+      },
+      {
+        "id": 3,
+        "title": "Laptop"
+      },
+      {
+        "id": 4,
+        "title": "Kopfhörer"
+      },
+      {
+        "id": 5,
+        "title": "Maus"
+      }
+    ],
+    "pl-PL": [
+      {
+        "id": 1,
+        "title": "Książka"
+      },
+      {
+        "id": 2,
+        "title": "Długopis"
+      },
+      {
+        "id": 3,
+        "title": "Laptop"
+      },
+      {
+        "id": 4,
+        "title": "Słuchawki"
+      },
+      {
+        "id": 5,
+        "title": "Mysz"
+      }
+    ]
+  },
+  "likes": [
+    {
+      "id": "default",
+      "productIds": [
+        3,
+        4
+      ]
+    }
+  ]
+}
