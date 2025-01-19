@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component matches snapshot 1`] = `
+<div>
+  <button
+    class="custom-button "
+  >
+    Click me
+  </button>
+</div>
+`;

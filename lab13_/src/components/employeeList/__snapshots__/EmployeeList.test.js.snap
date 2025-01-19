@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmployeeList Component matches snapshot when data is loaded 1`] = `
+<div>
+  <div
+    class="employee-list"
+  >
+    <h2>
+      Employees
+    </h2>
+    <div
+      class="employees"
+    >
+      <div
+        class="employee-card"
+      >
+        <h3>
+          John Doe
+        </h3>
+        <p>
+          Age: 
+          30
+        </p>
+        <p>
+          Company: 
+          Test Corp
+        </p>
+        <p>
+          Email: 
+          john@test.com
+        </p>
+        <p>
+          Status: 
+          Active
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
