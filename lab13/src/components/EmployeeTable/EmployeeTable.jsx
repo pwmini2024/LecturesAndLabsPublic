@@ -2,6 +2,10 @@ import React from "react";
 import "./EmployeeTable.css";
 
 function EmployeeTable({ employees, onDelete }) {
+  if (employees.length === 0) {
+    return <div className="table-container"></div>;
+  }
+
   return (
     <div className="table-container">
       <table className="employee-table">

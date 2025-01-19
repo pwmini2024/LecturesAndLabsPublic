@@ -27,6 +27,13 @@ describe("Employee Table", () => {
       });
     });
 
+    test("should show message when no employees exist", async () => {
+      // TODO: 1. Render the component
+      // TODO: 2. Wait for the component to load
+      // TODO: 3. Verify that the message is displayed
+      // TODO: 4. Verify that the table headers are not displayed
+    });
+
     test("should handle delete button clicks", async () => {
       const mockDelete = jest.fn();
 
