@@ -1,0 +1,1 @@
+export const generateKey = () => null as any;

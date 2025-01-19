@@ -71,8 +71,23 @@
     {
       "id": "default",
       "productIds": [
+        1,
+        2,
         3,
-        4
+        4,
+        5
+      ]
+    }
+  ],
+  "basket": [
+    {
+      "id": "default",
+      "productIds": [
+        1,
+        2,
+        3,
+        4,
+        5
       ]
     }
   ]
