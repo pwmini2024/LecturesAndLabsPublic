@@ -42,15 +42,25 @@ describe("EmployeeForm Component", () => {
     });
 
     const nameInput = screen.getByLabelText(/name/i);
+    const positionInput = screen.getByLabelText(/position/i);
+    const departmentInput = screen.getByLabelText(/department/i);
+    const emailInput = screen.getByLabelText(/email/i);
 
     await act(async () => {
       await userEvent.type(nameInput, "Jane Doe");
+      await userEvent.type(positionInput, "Manager");
+      await userEvent.type(departmentInput, "HR");
+      await userEvent.type(emailInput, "jane@example.com");
+
       const submitButton = screen.getByText("Add Employee");
       fireEvent.click(submitButton);
     });
 
     await waitFor(() => {
       expect(nameInput.value).toBe("");
+      expect(positionInput.value).toBe("");
+      expect(departmentInput.value).toBe("");
+      expect(emailInput.value).toBe("");
     });
   });
 });

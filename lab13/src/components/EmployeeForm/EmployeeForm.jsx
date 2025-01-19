@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { isValidEmail } from "../../utils/validation";
 import "./EmployeeForm.css";
 
 function EmployeeForm({ onSubmit }) {
@@ -9,17 +10,35 @@ function EmployeeForm({ onSubmit }) {
     email: "",
   });
 
+  const [errors, setErrors] = useState({});
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validate email
+    if (!isValidEmail(formData.email)) {
+      setErrors({ ...errors, email: "Please enter a valid email address" });
+      return;
+    }
+
     onSubmit({ ...formData, id: Date.now() });
     setFormData({ name: "", position: "", department: "", email: "" });
+    setErrors({});
   };
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors({
+        ...errors,
+        [name]: "",
+      });
+    }
   };
 
   return (
@@ -68,6 +87,7 @@ function EmployeeForm({ onSubmit }) {
           onChange={handleChange}
           required
         />
+        {errors.email && <span className="error">{errors.email}</span>}
       </div>
       <button type="submit">Add Employee</button>
     </form>
