@@ -43,7 +43,7 @@ describe("App Component Integration", () => {
   });
 });
 
-describe.skip("App Component Integration - Exercises", () => {
+describe.skip("[Excercise] App Component Integration", () => {
   /* Exercise 1: Test multiple employees
      TODO: Write a test that adds multiple employees and verifies they all appear
      Hint: Add 3 employees and check if they're all in the document */

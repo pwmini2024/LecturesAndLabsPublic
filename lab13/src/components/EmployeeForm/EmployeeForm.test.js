@@ -56,7 +56,7 @@ describe("EmployeeForm Component", () => {
 });
 
 // Exercise tests for students to complete
-describe.skip("EmployeeForm Component - Exercises", () => {
+describe.skip("[Excercise] EmployeeForm Component", () => {
   /* Exercise 1: Test form validation
      TODO: Write a test that verifies form validation works
      Hint: Try submitting the form without filling required fields */

@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmployeeTable Snapshots should match snapshot with employees 1`] = `
+<div>
+  <div
+    class="table-container"
+  >
+    <table
+      class="employee-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Position
+          </th>
+          <th>
+            Department
+          </th>
+          <th>
+            Email
+          </th>
+          <th>
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            John Doe
+          </td>
+          <td>
+            Developer
+          </td>
+          <td>
+            IT
+          </td>
+          <td>
+            john@example.com
+          </td>
+          <td>
+            <button
+              aria-label="Delete John Doe"
+              class="delete-btn"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`EmployeeTable Snapshots should match snapshot with empty employees list 1`] = `
+<div>
+  <div
+    class="table-container"
+  >
+    <table
+      class="employee-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Position
+          </th>
+          <th>
+            Department
+          </th>
+          <th>
+            Email
+          </th>
+          <th>
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;

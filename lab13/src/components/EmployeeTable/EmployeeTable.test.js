@@ -48,7 +48,7 @@ describe("Employee Table", () => {
     });
   });
 
-  describe.skip("🎓 Student Exercises", () => {
+  describe.skip("[Excercise] Test driven development excercise", () => {
     test("should show message when no employees exist", () => {
       expect(true).toBe(false); // TODO: Implement this test
     });
