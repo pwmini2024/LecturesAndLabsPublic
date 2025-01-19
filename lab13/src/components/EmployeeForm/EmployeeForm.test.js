@@ -55,19 +55,25 @@ describe("EmployeeForm Component", () => {
   });
 });
 
-// Exercise tests for students to complete
-describe.skip("[Excercise] EmployeeForm Component", () => {
+describe.skip("[Excercise] Validation Tests", () => {
   /* Exercise 1: Test form validation
      TODO: Write a test that verifies form validation works
      Hint: Try submitting the form without filling required fields */
   it("shows validation errors when submitting empty form", () => {
-    expect(true).toBe(false); // TODO: Implement this test
+    // TODO: 1. Render the component
+    // TODO: 2. Wait for the component to load
+    // TODO: 3. Click the submit button
+    // TODO: 4. Verify that the validation errors are displayed, hint: expect(screen.getByText(/name/i)).toBeInTheDocument();
   });
 
   /* Exercise 2: Test email format validation
      TODO: Write a test that verifies email format validation
      Hint: Try submitting the form with an invalid email format */
   it("validates email format", () => {
-    expect(true).toBe(false); // TODO: Implement this test
+    //TODO: 1. Render the component
+    //TODO: 2. Wait for the component to load
+    //TODO: 3. Enter an invalid email
+    //TODO: 4. Click the submit button
+    //TODO: 5. Verify that the validation error is displayed, hint: expect(emailInput.validationMessage).toBeTruthy();// TODO: Implement this test
   });
 });
