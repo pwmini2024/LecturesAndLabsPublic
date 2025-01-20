@@ -43,7 +43,7 @@ describe("User Interaction Tests", () => {
   });
 });
 
-describe("[Excercise] User Interaction Tests", () => {
+describe("[Ex1] User Interaction Tests", () => {
   /* Exercise 1: Test state persistence
      TODO: Write a test that verifies the state is maintained after operations
      Hint: Add employee, delete another, verify correct employees remain */

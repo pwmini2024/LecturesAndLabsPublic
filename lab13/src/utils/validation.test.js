@@ -20,7 +20,7 @@ describe("Email Validation Iterative Checks Unit Tests", () => {
     );
   });
 
-  describe.skip("[Exercise] Invalid Emails", () => {
+  describe.skip("[Ex6] Invalid Emails", () => {
     //TODO: Implement the tests for invalid emails
   });
 });

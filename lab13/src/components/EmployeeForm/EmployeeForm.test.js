@@ -65,11 +65,11 @@ describe("EmployeeForm Component", () => {
   });
 });
 
-describe.skip("[Excercise] Validation Tests", () => {
+describe.skip("Validation Tests", () => {
   /* Exercise 1: Test form validation
      TODO: Write a test that verifies form validation works
      Hint: Try submitting the form without filling required fields */
-  it("shows validation errors when submitting empty form", () => {
+  it("[Ex4] shows validation errors when submitting empty form", () => {
     // TODO: 1. Render the component
     // TODO: 2. Wait for the component to load
     // TODO: 3. Click the submit button
@@ -79,7 +79,7 @@ describe.skip("[Excercise] Validation Tests", () => {
   /* Exercise 2: Test email format validation
      TODO: Write a test that verifies email format validation
      Hint: Try submitting the form with an invalid email format */
-  it("validates email format", () => {
+  it("[Ex5] validates email format", () => {
     //TODO: 1. Render the component
     //TODO: 2. Wait for the component to load
     //TODO: 3. Enter an invalid email
